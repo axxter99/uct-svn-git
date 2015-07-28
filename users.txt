@@ -1,0 +1,15 @@
+adavis = Adam Davis <adam@admataz.com>
+aressell = Andrea Ressell <andrea.ressell@gmail.com>
+dhorwitz = David Horwitz <dhorwitz@gmail.com>
+djacka = 
+dmckie = Desireé McKie <desiree.mckie@uct.ac.za>
+etmoyo = Edmore Moyo <etmoyo@gmail.com>
+jira = 
+lbadi = Lubabalo Ta Mabra Badi <lababalo.babi@uct.ac.za>
+lnalube = Lovemore Nalube <lovenalube@gmail.com>
+lnjokweni = 
+marquard = Stephen Marquard <Stephen.marquard@uct.ac.za>
+rbrown = Roger Brown <Roger.Brown@uct.ac.za>
+rcarstens = Rondine Carstens <rondine.carstens@uct.ac.za>
+scheepers.debruin@gmail.com = scheepers.debruin@gmail.com
+sleepan = Sam Lee Pan <sam.leepan@uct.ac.za>

@@ -1,0 +1,46 @@
+#!/bin/sh
+
+SVNSRC="http://source.cet.uct.ac.za/svn/sakai"
+
+echo "$SVNSRC"
+
+
+USER=~/tmp/uct/users.txt
+CONFIG=`pwd`/config
+cd ~/tmp/uct/repos 
+
+echo "repros: ~/tmp/uct/repos "
+
+for i in `tr ' ' '_' </home/dhorwitz/tmp/uct/svn`
+do
+ 
+  echo $i
+  
+  
+  SAKAI=$SVNSRC/$i
+  echo "srv: $SAKAI"
+  git init $i
+  cd $i
+  #git 
+  #git svn clone $SAKAI --authors-file=$USER --no-metadata -s $i
+  
+  #https://github.com/nirvdrum/svn2git#readme
+  svn2git --authors $USER $SAKAI 
+  
+  
+  echo
+  
+  echo "git: $i"
+  #.git* 
+  echo $CONFIG
+  cp $CONFIG/.gitattributes .
+  cp $CONFIG/.gitignore .
+  cp $CONFIG/LICENSE .
+  git add .gitattributes .gitignore LICENSE
+  git commit -m "NOIJIRA .gitattributes .gitignore LICENSE"
+  
+  cd ..
+  echo
+  echo
+  
+done
