@@ -1,41 +1,44 @@
 #!/bin/sh
 
-SVNSRC="http://source.cet.uct.ac.za/svn/sakai"
-
+SVNSRC="https://source.sakaiproject.org/contrib/programmerscafe"
+REPOS="blogwow"
 echo "$SVNSRC"
 
-
-USER=~/tmp/uct/users.txt
-CONFIG=`pwd`/config
+CONFIG=`pwd`
+USER=$CONFIG/users.txt
+echo $USER
 cd ~/tmp/uct/repos 
 
 echo "repros: ~/tmp/uct/repos "
 
-for i in `tr ' ' '_' </home/dhorwitz/tmp/uct/svn`
-do
+#for i in `tr ' ' '_' < /home/dhorwitz/tmp/uct/svn`
+#do
  
-  echo $i
+  
+  echo $REPOS
   
   
-  SAKAI=$SVNSRC/$i
+  SAKAI=$SVNSRC/$REPOS
   echo "srv: $SAKAI"
-  git init $i
-  cd $i
+  git init $REPOS
+  cd $REPOS
+  echo `ls `
+  
   #git 
-  #git svn clone $SAKAI --authors-file=$USER --no-metadata -s $i
+  #git svn clone $SAKAI --authors-file=$USER --no-metadata -s $REPOS
   
   #https://github.com/nirvdrum/svn2git#readme
-  svn2git --authors $USER $SAKAI 
+   svn2git --authors $USER $SAKAI
   
   
   echo
   
-  echo "git: $i"
+  echo "git: $REPOS"
   #.git* 
-  echo $CONFIG
-  cp $CONFIG/.gitattributes .
-  cp $CONFIG/.gitignore .
-  cp $CONFIG/LICENSE .
+  echo $CONFIG/config
+  cp $CONFIG/config/.gitattributes .
+  cp $CONFIG/config/.gitignore .
+  cp $CONFIG/config/LICENSE .
   git add .gitattributes .gitignore LICENSE
   git commit -m "NOIJIRA .gitattributes .gitignore LICENSE"
   
@@ -43,4 +46,4 @@ do
   echo
   echo
   
-done
+#done
