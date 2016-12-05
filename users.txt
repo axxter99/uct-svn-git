@@ -14,3 +14,4 @@ rcarstens = Rondine Carstens <rondine.carstens@uct.ac.za>
 scheepers.debruin@gmail.com = scheepers.debruin@gmail.com
 sleepan = Sam Lee Pan <sam.leepan@uct.ac.za>
 coosthuizen = Corné Oosthuizen <corne.oosthuizen@uct.ac.za>
+dsmith = Duncan Smith <duncan.smith@uct.ac.za>
