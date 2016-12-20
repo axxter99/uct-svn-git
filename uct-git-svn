@@ -4,14 +4,25 @@ SVNSRC="http://source.cet.uct.ac.za/svn/sakai"
 
 echo "$SVNSRC"
 
+MYPATH=`pwd`
+USER=$MYPATH/users.txt
+CONFIG=$MYPATH/config
+UCTREPOS=$MYPATH/repos
+UCTSVN=$MYPATH/svn
 
-USER=~/tmp/uct/users.txt
-CONFIG=`pwd`/config
-cd ~/tmp/uct/repos 
 
-echo "repros: ~/tmp/uct/repos "
+rm -rf $UCTREPOS
+mkdir $UCTREPOS
 
-for i in `tr ' ' '_' </home/dhorwitz/tmp/uct/svn`
+
+cd  $UCTREPOS
+
+echo "repros: $UCTREPOS "
+echo "svn: $UCTSVN"
+echo "pwd: `pwd`"
+
+for i in `tr ' ' '_' <$UCTSVN`
+#for i in `tr ' ' '_' </home/dhorwitz/tmp/uct/svn`
 do
  
   echo $i
