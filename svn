@@ -1,7 +1,6 @@
-QuartzJobs
-profileWOW
-profilesearch
-spml
-providers
-uct-site-manage-modules
-
+uct/useralias
+#sms/sms
+##sms-utitl
+#sms/utils
+#uct/group-manager
+#qna

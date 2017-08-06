@@ -1,6 +1,7 @@
 #!/bin/sh
 
-SVNSRC="http://source.cet.uct.ac.za/svn/sakai"
+SVNSRC="https://source.sakaiproject.org/contrib/"
+#SVNSRC="file:/home/dhorwitz/svn"
 
 echo "$SVNSRC"
 
@@ -24,34 +25,44 @@ echo "pwd: `pwd`"
 for i in `tr ' ' '_' <$UCTSVN`
 #for i in `tr ' ' '_' </home/dhorwitz/tmp/uct/svn`
 do
- 
-  echo $i
+ if [ "$i" ] && [ ${i:0:1} != '#' ]
+	then
+    echo $i
   
   
-  SAKAI=$SVNSRC/$i
-  echo "srv: $SAKAI"
-  git init $i
-  cd $i
+     SAKAI=$SVNSRC/$i
+     echo "srv: $SAKAI"
+     git init $i
+     cd $i
   #git 
   #git svn clone $SAKAI --authors-file=$USER --no-metadata -s $i
   
   #https://github.com/nirvdrum/svn2git#readme
-  svn2git --authors $USER $SAKAI 
+  	svn2git --authors $USER $SAKAI 
+    if [ "$?" != "0" ]
+		    then
+		    	echo "s"
+		  	   exit
+		    else 
+		       echo "[done]"
+		fi
   
+  	echo
   
-  echo
-  
-  echo "git: $i"
+  	echo "git: $i"
   #.git* 
-  echo $CONFIG
-  cp $CONFIG/.gitattributes .
-  cp $CONFIG/.gitignore .
-  cp $CONFIG/LICENSE .
-  git add .gitattributes .gitignore LICENSE
-  git commit -m "NOIJIRA .gitattributes .gitignore LICENSE"
+  	echo $CONFIG
+  	cp $CONFIG/.gitattributes .
+  	cp $CONFIG/.gitignore .
+  	cp $CONFIG/LICENSE .
+  	git add .gitattributes .gitignore LICENSE
+  	git commit -m "NOJIRA .gitattributes .gitignore LICENSE"
   
-  cd ..
-  echo
-  echo
-  
+  	cd ..
+  	echo
+  	echo
+  		else
+			echo "[info] $i"
+		  	
+		fi
 done
