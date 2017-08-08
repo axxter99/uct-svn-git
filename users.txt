@@ -1,9 +1,12 @@
 adavis = Adam Davis <adam@admataz.com>
 aressell = Andrea Ressell <andrea.ressell@gmail.com>
+andrea.ressell@uct.ac.za = Andrea Ressell <andrea.ressell@gmail.com>
+andrea.ressell@gmail.com = Andrea Ressell <andrea.ressell@gmail.com>
 dhorwitz = David Horwitz <dhorwitz@gmail.com>
 djacka = 
 dmckie = Desireé McKie <desiree.mckie@uct.ac.za>
 etmoyo = Edmore Moyo <etmoyo@gmail.com>
+edmore.moyo@uct.ac.za = Edmore Moyo <etmoyo@gmail.com>
 jira = 
 lbadi = Lubabalo Ta Mabra Badi <lababalo.babi@uct.ac.za>
 lnalube = Lovemore Nalube <lovenalube@gmail.com>
@@ -101,7 +104,7 @@ zach.thomas@txstate.edu = Zach A. Thomas <zach@aeroplanesoftware.com>
 zach@aeroplanesoftware.com = Zach A. Thomas <zach@aeroplanesoftware.com>
 zqian@umich.edu = Zhen Qian <zqian@umich.edu>
 alistair@smo.uhi.ac.uk = Alistair Young <alistair@smo.uhi.ac.uk>
-andersjb@iupui.edu = Jon Anderson <andersjb@iupui.edu>
+andersjb@iupui.edu =  Anderson <andersjb@iupui.edu>
 andrew@caret.cam.ac.uk = Andrew Thornton <andrew@caret.cam.ac.uk>
 b.toeter@uva.nl = Bas Toeter <b.toeter@uva.nl>
 bbiltimier@rsmart.com = Brooke Biltimier <brooke.biltimier@rsmart.com>
@@ -163,6 +166,15 @@ jaco@opencollab.co.za = Jaco Gillman <jaco@opencollab.co.za>
 duncan.smith@uct.ac.za = Duncan Smith <duncan.smith@uct.ac.za>
 corne.oosthuizen@uct.ac.za = Corné Oosthuizen <corne.oosthuizen@uct.ac.za>
 duane.zietsman@uct.ac.za = Duane Zietsman <duane.zietsman@uct.ac.za>
+etienne@psybergate.co.za = Etienne <etienne@psybergate.co.za>
+louis@psybergate.co.za = Louis <louis@psybergate.co.za>
+jaen@psybergate.co.za = Jaen <jaen@psybergate.co.za> 
+riaans@teqcle.co.za = Riaan <riaans@teqcle.co.za>
+wilhelm@psybergate.co.za = wilhelm <wilhelm@psybergate.co.za>
+julian@psybergate.co.za = Julian <wilhelm@psybergate.co.za>
+grant@psybergate.co.za = grant@psybergate.co.za
+jaques@opencollab.co.za = Jaques Smith <jaques@opencollab.co.za>
+
 
 
 

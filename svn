@@ -1,6 +1,6 @@
-uct/useralias
-#sms/sms
-##sms-utitl
-#sms/utils
+#uct/useralias
 #uct/group-manager
 #qna
+sms/sms
+##sms-utitl
+#sms/utils
