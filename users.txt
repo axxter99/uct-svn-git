@@ -172,7 +172,7 @@ jaen@psybergate.co.za = Jaen <jaen@psybergate.co.za>
 riaans@teqcle.co.za = Riaan <riaans@teqcle.co.za>
 wilhelm@psybergate.co.za = wilhelm <wilhelm@psybergate.co.za>
 julian@psybergate.co.za = Julian <wilhelm@psybergate.co.za>
-grant@psybergate.co.za = grant@psybergate.co.za
+grant@psybergate.co.za = Grant <grant@psybergate.co.za>
 jaques@opencollab.co.za = Jaques Smith <jaques@opencollab.co.za>
 
 

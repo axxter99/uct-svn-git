@@ -38,7 +38,8 @@ do
   #git svn clone $SAKAI --authors-file=$USER --no-metadata -s $i
   
   #https://github.com/nirvdrum/svn2git#readme
-  	svn2git --authors $USER $SAKAI 
+     svn2git --revision 55000:HEAD  --nobranches --notags --authors $USER $SAKAI
+     #--rootistrunk 
     if [ "$?" != "0" ]
 		    then
 		    	echo "s"
