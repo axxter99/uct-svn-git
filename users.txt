@@ -142,3 +142,5 @@ michael.appleby@yale.edu = Michael Appleby <michael.appleby@yale.edu>
 sacha.lepretre@crim.ca = Sacha Leprêtre <sacha.lepretre@crim.ca>
 dstu@umich.edu = Dan Stuart <dstu@umich.edu>
 ericeche@umich.edu = Eric Echeverri <ericeche@umich.edu>
+roland@edia.nl  = Roland Groen <roland@edia.nl>
+maarten@edia.nl = Maarten <maarten@edia.nl>

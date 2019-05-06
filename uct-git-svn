@@ -1,7 +1,7 @@
 #!/bin/sh
 
-SVNSRC="https://source.sakaiproject.org/contrib/programmerscafe"
-REPOS="blogwow"
+SVNSRC="https://source.sakaiproject.org/contrib/edia"
+REPOS="maps"
 echo "$SVNSRC"
 
 CONFIG=`pwd`
